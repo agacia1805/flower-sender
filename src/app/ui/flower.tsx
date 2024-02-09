@@ -6,7 +6,7 @@ interface FlowerIconProps {
   animate: boolean;
 }
 
-export default function Flower({ flower, animate }): React.FC<FlowerIconProps> {
+export default function Flower({ flower, animate }: FlowerIconProps) {
   const variants = {
     hidden: {
       opacity: 0,

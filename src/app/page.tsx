@@ -4,9 +4,10 @@ import React, { useState, useEffect } from 'react';
 import Button from '@/app/ui/button';
 import Flower from '@/app/ui/flower';
 import { flowerGroups } from '@/app/ui/flowerGroups';
+import { FlowerGroup } from '@/app/ui/types';
 
 export default function Home() {
-  const [selectedGroup, setSelectedGroup] = useState(null);
+  const [selectedGroup, setSelectedGroup] = useState<FlowerGroup | null>(null);
 
   const handleButtonClick = () => {
     const randomIndex = Math.floor(Math.random() * flowerGroups.length);

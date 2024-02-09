@@ -1,4 +1,4 @@
-import { Flower } from './types';
+import { FlowerGroup } from './types';
 import { IoIosFlower } from 'react-icons/io';
 import { GiDandelionFlower } from 'react-icons/gi';
 import { IoFlowerOutline } from 'react-icons/io5';
