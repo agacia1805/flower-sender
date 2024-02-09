@@ -17,7 +17,7 @@ export default function Flower({ flower, animate }: FlowerIconProps) {
       opacity: 1,
       x: flower.endPosition.x,
       y: flower.endPosition.y,
-      transition: { duration: 4 },
+      transition: { duration: 4, scale: 1.3 },
     },
     circle: {
       rotate: 120,

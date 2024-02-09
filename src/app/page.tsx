@@ -17,7 +17,7 @@ export default function Home() {
 
   return (
     <div className='fixed left-0 flex w-full items-center justify-center'>
-      {selectedGroup &&
+      {selectedGroup ?
         selectedGroup.subgroups.map((subgroup, index) =>
           subgroup.flowers.map((flower) => (
             <Flower
@@ -26,10 +26,11 @@ export default function Home() {
               animate={true}
             />
           ))
-        )}
+        ) :
       <Button onClick={handleButtonClick} name='Show flowers button'>
         Open me
       </Button>
+      }
     </div>
   );
 }
