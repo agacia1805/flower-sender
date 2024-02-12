@@ -31,7 +31,7 @@ export default function EmailModal({ isOpen, onClose }: DialogProps) {
   if (!isOpen) return null;
 
   return (
-    <Transition.Root show={open} as={Fragment}>
+    <Transition.Root show={isOpen} as={Fragment}>
          <Dialog as="div" className="relative z-10" onClose={onClose}>
            <Transition.Child
              as={Fragment}
