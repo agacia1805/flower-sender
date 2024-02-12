@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Button from '@/app/ui/button';
 import Flower from '@/app/ui/flower';
+import ShareEmail from '@/app/ui/shareEmail';
 import { flowerGroups } from '@/app/ui/flowerGroups';
 import { FlowerGroup } from '@/app/ui/types';
 
@@ -17,7 +18,7 @@ export default function Home() {
 
   return (
     <div className='fixed left-0 flex w-full items-center justify-center'>
-      {selectedGroup ?
+      {selectedGroup ? (
         selectedGroup.subgroups.map((subgroup, index) =>
           subgroup.flowers.map((flower) => (
             <Flower
@@ -26,11 +27,13 @@ export default function Home() {
               animate={true}
             />
           ))
-        ) :
-      <Button onClick={handleButtonClick} name='Show flowers button'>
-        Open me
-      </Button>
-      }
+        )
+      ) : (
+        <Button onClick={handleButtonClick} name='Show flowers button'>
+          Open me
+        </Button>
+      )}
+      <ShareEmail />
     </div>
   );
 }
