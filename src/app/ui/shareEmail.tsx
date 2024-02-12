@@ -17,7 +17,7 @@ export default function ShareEmail() {
       >
         Share
       </Button>
-      <Dialog isOpen={isOpen} onClose={() => {setIsOpen(false)}}/>
+      <EmailModal isOpen={isOpen} onClose={() => {setIsOpen(false)}}/>
     </>
   );
 }
