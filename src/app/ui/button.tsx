@@ -3,16 +3,16 @@ import * as React from 'react';
 type ButtonProps = {
   children: React.ReactNode;
   className?: string;
-  onClick: () => void;
+  onClick?: () => void;
   name: string;
-  type?: string;
+  type?: "button" | "submit" | "reset";
 };
 
 export default function Button({
   name,
   onClick,
   children,
-  type,
+  type = 'button',
   className,
 }: ButtonProps) {
   return (
