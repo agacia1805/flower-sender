@@ -3,7 +3,6 @@
 import React, { useState, useEffect } from 'react';
 import Button from '@/app/ui/button';
 import Flower from '@/app/ui/flower';
-import ShareEmail from '@/app/ui/shareEmail';
 import { flowerGroups } from '@/app/ui/flowerGroups';
 import { FlowerGroup } from '@/app/ui/types';
 
@@ -33,7 +32,6 @@ export default function Home() {
           Open me
         </Button>
       )}
-      <ShareEmail />
     </div>
   );
 }
