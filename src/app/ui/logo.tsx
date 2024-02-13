@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 export default function Logo() {
   return (
     <motion.div
-      className='w-12 cursor-pointer md:w-16'
+      className='w-12 cursor-pointer md:w-12'
       whileHover={{ rotate: 180 }}
       transition={{ duration: 0.6 }}
     >
