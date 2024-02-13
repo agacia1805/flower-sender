@@ -7,17 +7,23 @@ import Button from './button';
 
 export default function ShareEmail() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
+
   return (
-    <>
+    <div className='flex items-center'>
       <Button
         onClick={() => {
           setIsOpen(!isOpen);
         }}
-        name="Share email button"
+        name='Share email button'
       >
         Share
       </Button>
-      <EmailModal isOpen={isOpen} onClose={() => {setIsOpen(false)}}/>
-    </>
+      <EmailModal
+        isOpen={isOpen}
+        onClose={() => {
+          setIsOpen(false);
+        }}
+      />
+    </div>
   );
 }
