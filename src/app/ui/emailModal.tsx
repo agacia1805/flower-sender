@@ -4,12 +4,12 @@ import { Fragment, useState, useCallback } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
 import Button from './button';
 
-interface DialogProps {
+interface EmailModalProps {
   onClose: () => void;
   isOpen: boolean;
 }
 
-export default function EmailModal({ isOpen, onClose }: DialogProps) {
+export default function EmailModal({ isOpen, onClose }: EmailModalProps) {
   const [email, setEmail] = useState<string>('');
   const [senderName, setSenderName] = useState<string>('');
   const [message, setMessage] = useState<string>('');
