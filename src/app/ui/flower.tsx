@@ -27,10 +27,10 @@ export default function Flower({ flower, animate }: FlowerIconProps) {
 
   return (
     <motion.div
-      style={{ position: 'absolute' }}
       variants={variants}
       initial='hidden'
       animate={animate ? ['visible', 'circle'] : 'hidden'}
+      className="absolute"
     >
       {flower.icon}
     </motion.div>
