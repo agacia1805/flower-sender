@@ -23,7 +23,7 @@ export default async function handler(
 
   const message = {
     to: email,
-    from: 'pineheadcoder@gmail.com',
+    from: 'flower_sender@proton.me',
     subject: `${senderName || 'Someone'} is sending you flowers`,
     html:
       `
